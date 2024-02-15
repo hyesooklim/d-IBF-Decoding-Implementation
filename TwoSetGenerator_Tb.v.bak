@@ -1,0 +1,47 @@
+`include "./headers.v"
+module TwoSetGenerator_Tb;
+reg clk=0, reset = 0;
+wire [`KeyField-1:0] Y;
+
+LFSR LFSR (clk, reset, Y);
+
+always #5 clk = ~clk;
+initial #20 reset = 1;
+
+integer i=0, j=0, result = 0, result2 = 0, result3 = 0;
+/*
+// S2 is a subset of S1
+always @(negedge clk) begin
+	if (reset) begin
+		result = $fopen ("Set1.txt");
+		result2 = $fopen ("Set2.txt");
+		$fdisplay (result, "%b", Y);
+		if (i < `Set2Size) $fdisplay (result2, "%b", Y);
+		i = i + 1;
+	end
+	if (i==`SetSize) $stop;
+end
+*/
+
+//S2 is larger than S1. S1 has `S1Distinct number of unique elements.
+always @(negedge clk) begin
+	if (reset) begin
+		result = $fopen ("Set1.txt");
+		if ((i != 0) && (i<=`SetSize)) $fdisplay (result, "%b", Y); //in order to avoid all zero element
+		i = i + 1;
+	end
+end
+
+always @(negedge clk) begin
+	if (reset) begin
+		result2 = $fopen ("Set2.txt");
+		result3 = $fopen ("Set_Difference.txt");
+		if ((j!=0) && (j <=`S1Distinct)) $fdisplay (result3, "%b", {1'b1, Y});
+		else if (j>`Set2Size-`S2Distinct + `S1Distinct ) $fdisplay (result3, "%b", {1'b1, Y});
+		if (j >(`S1Distinct)) $fdisplay (result2, "%b", Y);
+		j = j + 1;
+	end
+	if (j==(`Set2Size +`S1Distinct + 1)) $stop;
+end
+
+endmodule

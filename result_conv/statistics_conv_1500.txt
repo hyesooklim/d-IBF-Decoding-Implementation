@@ -1,0 +1,3 @@
+Conventional: Decoding complete! number of decoded elements:    1041 out of        1000
+No. of elements decoded correctly =         676, No. of unfound elements =         333
+time =               334595, No. of SigNotEqual =    33, No of T1 Cases =   369

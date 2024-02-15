@@ -1,0 +1,3 @@
+Proposed: Decoding complete! number of decoded elements:   2361 out of       10000
+No. of elements decoded correctly =        2171, No. of unfound elements =        7829
+time =              1494745, No. of SigNotEqual =     0, No of T1 Cases =  2988, No of T2 Cases =     3

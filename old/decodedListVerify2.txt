@@ -1,0 +1,16 @@
+decodedList[          0] = 100100011 00100011
+decodedList[          1] = 100101000 00101000
+decodedList[          2] = 101010000 01010000
+decodedList[          3] = 100000101 00000101
+decodedList[          4] = 100001010 00001010
+decodedList[          5] = 100010100 00010100
+decodedList[          6] = 110111010 10111010
+decodedList[          7] = 101101001 01101001
+decodedList[          8] = 110001100 10001100
+decodedList[          9] = 110100000 10100000
+decodedList[         10] = 101000110 01000110
+decodedList[         11] = 111010010 11010010
+decodedList[         12] = 100000000
+decodedList[         13] = 101011101 01011101
+decodedList[         14] = 110111001 10111001
+decodedList[         15] = 101101111 01101111
