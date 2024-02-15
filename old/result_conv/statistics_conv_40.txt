@@ -1,3 +1,0 @@
-Conventional: Decoding complete! number of decoded elements:    16 out of          40
-No. of elements decoded correctly =           8, No. of unfound elements =          32
-No. of SigNotEqual =   0, No of T1 Cases =   8

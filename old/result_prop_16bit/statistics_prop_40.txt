@@ -1,3 +1,0 @@
-Proposed: Decoding complete! number of decoded elements:    11 out of          40
-No. of elements decoded correctly =          10, No. of unfound elements =          30
-No. of SigNotEqual =   0, No of T1 Cases =  11, No of T2 Cases =   0
