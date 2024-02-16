@@ -83,5 +83,5 @@ Following files are generated.
 
 ---
 
-We found out that hash indexes generated from idSum field have the same role of sigSum field, since they can be used in differentiating one idSum from another. Hence, ther is no need to allocate a large number of bits for sigSum. 
+We found out that hash indexes generated from idSum field have the same role of sigSum field, since they can be used in differentiating one idSum from another. Hence, there is no need to allocate a large number of bits for sigSum. 
 
