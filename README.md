@@ -66,7 +66,8 @@ Sets S1, S2, Set_Difference are generated
 IBF1 and IBF2 are programmed
 
 
-### 3) d_IBF_Build_Tb: d-IBF is constructed
+### 3) d_IBF_Build_Tb
+d-IBF is constructed
 
 
 ### 4) d_IBF_Decoding_Tb (or d_IBF_Decoding_Conv_Tb): 
